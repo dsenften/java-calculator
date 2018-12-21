@@ -1,1 +1,9 @@
 .idea/
+*.log
+*.toc
+*.lb
+*.gz
+*.out
+*.aux
+target/
+/src/main/tex/manual.pdf
