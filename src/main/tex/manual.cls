@@ -5,7 +5,7 @@
 %  Copyright (c) 2008-2012 Diso. All rights reserved.
 %
 \NeedsTeXFormat{LaTeX2e}\relax
-\ProvidesClass{arbeitsbuch}[2017/08/10 Talent Factory's erweiterte Article Class]
+\ProvidesClass{manual}[2017/08/10 Manual Class]
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption{11pt}{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}

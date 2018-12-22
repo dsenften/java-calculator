@@ -5,5 +5,7 @@
 *.gz
 *.out
 *.aux
+*.ilg
+*.ind
 target/
 /src/main/tex/manual.pdf
