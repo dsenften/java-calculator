@@ -1,0 +1,8 @@
+/**
+ * Datei mit allen Möglichkeiten, die in der vorliegenden
+ * Version des Rechners abgebildet sind.
+ */
+
++5.8           // Einfache Zahl mit Vorzeichen
++12.5 + -4.5   // Einfache Addition mit einer negativen Zahl
+1 + 2 * 3 -4   // Wird die Regel (Punkt vor Strich) berücksichtigt?

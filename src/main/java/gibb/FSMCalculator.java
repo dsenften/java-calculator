@@ -12,14 +12,14 @@ import java.util.regex.Pattern;
  * soll eine Rechnug auf der Kommandozeile verarbeiten, in der Form:
  *
  * <code>
- * $ gibb.Calculator 123.4 + 56.7
+ * $ gibb.FSMCalculator 123.4 + 56.7
  * 180.1
  *
  * </code>
  */
-public class Calculator {
+public class FSMCalculator {
 
-    private FSM fsm = new FSM("Calculator");
+    private FSM fsm = new FSM("FSMCalculator");
     private Stack<Double> stack = new Stack<>();
     private String currentSubString;
     private String currentOperator = "";
@@ -84,7 +84,7 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator();
+        FSMCalculator calculator = new FSMCalculator();
         calculator.initStateMachine();
 
         StringBuilder builder = new StringBuilder();
