@@ -26,7 +26,7 @@
 
         <java.source.version>11</java.source.version>
         <java.target.version>11</java.target.version>
-        <antlr.version>4.7.1</antlr.version>
+        <antlr.version>4.7.2</antlr.version>
         <junit.jupiter.version>5.3.2</junit.jupiter.version>
 
 
@@ -88,7 +88,7 @@
                     <!-- Definiert, dass xelatex genutzt werden soll -->
                     <latexSteps>xelatex</latexSteps>
                     <sourceDirectory>src/main/tex</sourceDirectory>
-                    <texFile>manual.tex</texFile>
+                    <texFile>main.article.tex</texFile>
                 </configuration>
 
 

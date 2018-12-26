@@ -4,6 +4,15 @@
 %  Created by Daniel D. Senften on 2008-12-14.
 %  Copyright (c) 2008-2012 Diso. All rights reserved.
 %
+%
+%  Die wichtigsten, zusätzlichen Definitionen, sowie sämtliche 'Packages', die
+%  in diesem Dokument verwendet/referenziert werden, sind in der Dokumentenklasse
+%  'manual.cls' abgelegt. Dies hat den Vorteil, dass diese in jedem weiteren
+%  (LaTeX) Dokument wiederverwendet werden können.
+% 
+%  Idealerweise wird die eigene Dokumentenklasse im zentralen Verzeichnis
+%  '~/Library/texmf/tex/latex' abgelegt.
+%
 \NeedsTeXFormat{LaTeX2e}\relax
 \ProvidesClass{manual}[2017/08/10 Manual Class]
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
@@ -23,8 +32,7 @@
 \RequirePackage{fontspec}
 %\RequirePackage[utf8]{inputenc} % Use utf-8 encoding for foreign characters
 \RequirePackage{listings} % Package for including code in the document
-
-\RequirePackage{beamerarticle} % Make BEAMER commands available for other document class
+\RequirePackage{beamerarticle} 
 
 \RequirePackage{xcolor}
 \DefineNamedColor{named}{Pantone}{cmyk}{55,15,0,0}
@@ -50,12 +58,11 @@
 \RequirePackage{relsize,fancyvrb}
 \RequirePackage{multicol,multirow}
 
-
 \RequirePackage{tikz}
 \RequirePackage{tikz-uml}
 \RequirePackage{amssymb}
 
-\newcommand\Figure[2]{%
+\newcommand\image[2]{%
   \begin{figure}[ht]
 	\centering		
     \mode<presentation>{\includegraphics[width=10cm]{Images/#1.png}}
@@ -64,6 +71,8 @@
     \label{fig:#1}
   \end{figure}
 }
+
+\setmainfont{Verdana}
 
 \AtBeginDocument{%
   \DeclareGraphicsExtensions{.pdf,.jpg,.tif}

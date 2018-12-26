@@ -1,0 +1,46 @@
+\documentclass[12pt,aspectratio=169]{beamer}
+
+\RequirePackage[ngerman]{babel}
+\RequirePackage{pgfplots}
+
+\usepgfplotslibrary{dateplot}
+\usetheme[progressbar=frametitle]{metropolis}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+}
+
+\title{Einfacher Taschenrechner}
+\subtitle{Grundlagen der Java Programmierung}
+
+\date{\today}
+\author{\href{mailto:daniel.senften@talent-factory.ch}{Daniel Senften}}
+\institute{Talent Factory}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+% ----------------------------------
+
+\begin{document}
+
+\maketitle
+
+% Theme "metropolis" supports 4 different titleformats
+%   frame=regular
+%   frame=smallcaps
+%   frame=allsmallcaps
+%   frame=allcaps
+\metroset{titleformat frame=smallcaps}
+
+\begin{frame}{Inhaltsverzeichnis}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+\input{manual.tex}
+
+\end{document}
