@@ -6,9 +6,13 @@
 *.aux
 *.ilg
 *.ind
+*.nav
+*.snm
 
 gen/
 .idea/
 target/
 
+/src/main/tex/main.article.pdf
+/src/main/tex/main.beamer.pdf
 /src/main/tex/manual.pdf
